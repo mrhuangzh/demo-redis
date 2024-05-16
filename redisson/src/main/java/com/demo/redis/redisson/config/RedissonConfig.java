@@ -43,6 +43,7 @@ public class RedissonConfig {
 //            };
 //            config.useClusterServers().addNodeAddress(nodes)
 //                    .setPassword("redis-cluster");
+//                    .setCheckSlotsCoverage(false);// 关闭集群完整性检查，集群nodes.conf文件中，可能会出现内网ip导致 Not all slots covered!，关闭该项检查或修改nodes.conf文件中内网ip为公网ip即可
 
             redissonClient = Redisson.create(config);
         } catch (Exception e) {
