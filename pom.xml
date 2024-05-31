@@ -19,7 +19,11 @@
 
     <!-- 模块说明，这里声明多个子模块 -->
     <modules>
-
+        <module>jedis</module>
+        <module>redis-cluster</module>
+        <module>redis-sentinel</module>
+        <module>redis-template</module>
+        <module>redisson</module>
     </modules>
 
     <!-- 版本号定义 -->
